@@ -1,12 +1,12 @@
-import { defineStore } from 'pinia'
+import { defineStore } from "pinia";
 
-export default defineStore('modal', {
+export default defineStore("modal", {
   state: () => ({
-    isOpen: false
+    isOpen: false,
   }),
   getters: {
     hiddenClass(state) {
-      return !state.isOpen ? 'hidden' : ''
-    }
-  }
-})
+      return !state.isOpen ? "hidden" : "";
+    },
+  },
+});
